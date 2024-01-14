@@ -78,8 +78,12 @@
               >W3Schools</a
             >網站搜尋並學習更多的HTML和CSS的知識，其中在設計使用JavaScript設計點開及關閉內文時也遇到程式跑不出來的狀況，經過多次嘗試後也成功解決，也有跟學過程式的朋友討論一些程式語法方面的通用寫法和書寫小技巧，盡可能的讓第一次的作品可以呈現得更好。
           </div>
-          <h1 onclick="ans7();"><li>其他想要對我們說的事情</li></h1>
+          <h1 onclick="ans7();"><li>對我而言最重要的一項人際交往原則</li></h1>
           <div class="ans" id="ans7">
+            我覺得人與人之間的交往最重要的是誠信，只要有誠信的基礎上做事，才能互相信賴把事情處裡的更加順利且完整。
+          </div>
+          <h1 onclick="ans8();"><li>其他想要對我們說的事情</li></h1>
+          <div class="ans" id="ans8">
             很感謝您在<img
               src="youtube.svg"
               class="img2"
@@ -96,6 +100,7 @@
       let open5 = true;
       let open6 = true;
       let open7 = true;
+      let open8 = true;
       function ans1() {
         let ans1Div = document.querySelector("#ans1");
         if (open1 == true) {
@@ -164,6 +169,16 @@
         } else {
           ans7Div.style.display = "none";
           open7 = true;
+        }
+      }
+      function ans8() {
+        let ans8Div = document.querySelector("#ans8");
+        if (open8 == true) {
+          ans8Div.style.display = "block";
+          open8 = false;
+        } else {
+          ans8Div.style.display = "none";
+          open8 = true;
         }
       }
     </script>
